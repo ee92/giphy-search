@@ -1,0 +1,39 @@
+.frame {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border-radius: 5px; */
+  margin: 10px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.image.loading {
+  width: 100%;
+  height: 0px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.info {
+  padding: 10px;
+  color: white;
+  transition: flex 3s;
+}
