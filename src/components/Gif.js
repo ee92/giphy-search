@@ -50,14 +50,19 @@ class Gif extends React.Component {
 
 
     return (
-      <div className={styles.frame} onMouseEnter={this.hover} onMouseLeave={this.unhover}>
+      <div
+				onMouseEnter={this.hover}
+				onMouseLeave={this.unhover}
+				className={styles.frame}
+				style={{backgroundColor: loading && this.state.color}}
+			>
         <img
           src={gif.images.downsized.url}
+					onLoad={this.loaded}
           className={styles.image}
-          onLoad={this.loaded}
-          style={{height: height, backgroundColor: this.state.color}}
+          style={{height: height, visibility: loading && 'hidden'}}
         />
-        {showInfo && <div className={styles.info}>
+				{showInfo && <div className={styles.info}>
           <div className={styles.title}>{gif.title}</div>
           {gif.user &&
             <div className={styles.user}>

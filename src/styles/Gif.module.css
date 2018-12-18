@@ -1,6 +1,6 @@
 .frame {
   background-color: rgba(0, 0, 0, 0.5);
-  /* border-radius: 5px; */
+  border-radius: 5px;
   margin: 10px;
   overflow: hidden;
 }
@@ -8,6 +8,7 @@
 .image {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .image.loading {
@@ -35,5 +36,4 @@
 .info {
   padding: 10px;
   color: white;
-  transition: flex 3s;
 }

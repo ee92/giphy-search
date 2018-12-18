@@ -44,7 +44,11 @@ class Masonry extends Component {
     return (
       <div className={styles.root}>
         {columns.map((column) =>
-					<div style={{width: this.props.columnWidth}} className={styles.column} key={columns.indexOf(column)}>
+					<div
+            style={{width: this.props.columnWidth}}
+            className={styles.column}
+            key={columns.indexOf(column)}
+          >
 						{column.map(tile => tile)}
 					</div>
 				)}
